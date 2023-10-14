@@ -3,9 +3,9 @@ import AOS from 'aos';
 import "aos/dist/aos.css";
 import './index.css';
 import {
-  BrowserRouter as Router,
   Routes,
-  Route
+  Route,
+  Navigate
 } from 'react-router-dom';
 // All pages
 import Home from './pages/Home';
@@ -33,14 +33,11 @@ function App() {
 
   return (
     <>
-      <Router>
-        <ScrollToTop>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/contact" element={<Contact />} />
+            <Route render={() => <Navigate replace to="/" />} />
           </Routes>
-        </ScrollToTop>
-      </Router>
     </>
   );
 }

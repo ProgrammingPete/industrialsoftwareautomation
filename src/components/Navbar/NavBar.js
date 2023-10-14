@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import NavLinks from '../Navbar/NavLinks';
 
 
@@ -13,7 +13,7 @@ const NavBar = () => {
 
     useEffect(() => {
       const scrollHandler = () => {
-        window.pageYOffset > 10 ? setTop(false) : setTop(true)
+        window.scrollY > 10 ? setTop(false) : setTop(true)
       };
       window.addEventListener('scroll', scrollHandler);
       return () => window.removeEventListener('scroll', scrollHandler);
@@ -23,8 +23,9 @@ const NavBar = () => {
         <nav className={`fixed top-0 w-full z-30 transition duration-300 ease-in-out mb-16 ${!top && 'bg-white shadow-lg'}`}>
             <div className="flex flex-row justify-between items-center py-2">
                 <div className="flex flex-row justify-center md:px-12 md:mx-12 items-center text-center font-semibold">
-                    <Link to="/"><h1 className="font-extrabold text-4xl text-blue-900">ISA</h1></Link>
-                    
+                    <HashLink className="px-4 font-extrabold text-gray-500 hover:text-blue-900" smooth to="/#hero">
+                                <h1 className="font-extrabold text-4xl text-blue-900">ISA</h1>
+                    </HashLink>
                 </div>
                 <div className="group flex flex-col items-center">
                     <button className="p-2 rounded-lg lg:hidden text-blue-900" onClick={handleClick}>

@@ -3,7 +3,7 @@ import React from 'react';
 const Portfolio = () => {
     return (
         <>
-            <section className="my-4 py-4" id='portfolio'>
+            <div className="my-4 py-4" id='portfolio'>
                 <h2 className="my-2 text-center text-3xl text-blue-900 uppercase font-bold">Products</h2>
                 <div className='flex justify-center'>
                     <div className='w-24 border-b-4 border-blue-900 mb-8'></div>
@@ -15,7 +15,7 @@ const Portfolio = () => {
                             <div className="m-2 text-justify text-sm">
                                 <h4 className="font-semibold my-4 text-lg md:text-2xl text-center mb-4 h-12">Configruation, Application, and Pricing Tools</h4>
                                 <p className="text-md font-medium leading-5 h-auto md:h-48">
-                                    Our Configuratiokn Tool is a robust and easily scalable system that streamlines business operations, increase efficiency, and ultimately drive growth and profitability for your business.
+                                    Our Configuration Tool is a robust and easily scalable system that streamlines business operations, increase efficiency, and ultimately drive growth and profitability for your business.
                                     With features such as Pricing, Quoting and many more modules to effectively manage all aspects of a business.
                                     All data is stored in the cloud and as such it is easily accessible from all devices and from any location, and allows for easy scalability.
                                 </p>
@@ -36,7 +36,7 @@ const Portfolio = () => {
                                 <h4 className="font-semibold my-4 text-lg md:text-2xl text-center mb-4 h-12">Personal Websites</h4>
                                 <p className="text-md font-medium leading-5 h-auto md:h-48">
                                     We use the most up-to-date frontend frameworks to create website for our small clients that allows them to make a name for themselves in their industry.
-                                    Some example industries compose of Modeling, Power washing, and other small IT/Industrial companies. Please contant for more information. One main feasutre of our personal wesbite is SEO and a Contact page that allows users to contact the business owner's respective sales manager.  
+                                    Some example industries compose of Modeling, Power washing, and other small IT/Industrial companies. Please contant for more information. One main feasutre of our personal wesbite is SEO and a Contact page that allows users to contact the respective sales manager.  
                                 </p>
                             </div>
                         </div>
@@ -44,16 +44,14 @@ const Portfolio = () => {
                             <div className="m-2 text-justify text-sm">
                                 <h4 className="font-semibold my-4 text-lg md:text-2xl text-center mb-4 h-12">Data-Driven Applications</h4>
                                 <p className="text-md font-medium leading-5 h-auto md:h-48">
-                                    One of our most renown data-driven applications was for our Amazon client, which enabled them to efficiently use data generated at amazon warehouses. 
-                                    This data was then used to determine the efficieny of workers in a warehouse, and quickly notify the regional manager of the warehouse of any inefficiencies and loss of headcount. We also included other metrics such as throughput and processing of packages. 
-                                    We also created a serverless notification sysstem to send messages directly through the medium of choice, whether that be Slack or Discord. 
+                                    One of our most renown data-driven applications was for our Amazon client, which enabled them to efficiently use data generated at warehouses. 
+                                    This data was then used to determine the efficiency of workers in a warehouse, and quickly notify the regional manager of the warehouse of any loss of headcount. We also included other metrics such as throughput and fullfilment of packages. 
                                 </p>
-
                             </div>
                         </div>               
                     </div>
                 </div>
-            </section>
+            </div>
         </>
     )
 }
