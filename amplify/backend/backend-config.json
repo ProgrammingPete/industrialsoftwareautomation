@@ -35,6 +35,22 @@
     }
   },
   "parameters": {
+    "AMPLIFY_function_industrialsoftwarecontactuploader_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "industrialsoftwarecontactuploader"
+        }
+      ]
+    },
+    "AMPLIFY_function_industrialsoftwarecontactuploader_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "industrialsoftwarecontactuploader"
+        }
+      ]
+    },
     "AMPLIFY_function_industrialsoftwarecontactuploader_sesEmail": {
       "usedBy": [
         {

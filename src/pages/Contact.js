@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import NavBar from '../components/Navbar/NavBar';
 import Footer from '../components/Footer';
 import {useDocTitle} from '../components/CustomHook';
-import axios from 'axios';
+import { API } from 'aws-amplify';
+import { createEmailMessage } from '../graphql/mutations';
 import Notiflix from 'notiflix';
 
 const Contact = () => {
@@ -37,42 +38,40 @@ const Contact = () => {
         fData.append('phone_number', phone)
         fData.append('message', message)
 
-        axios({
-            method: "post",
-            url: process.env.REACT_APP_CONTACT_API,
-            data: fData,
-            headers: {
-                'Content-Type':  'multipart/form-data'
-            }
-        })
-        .then(function (response) {
-            document.getElementById('submitBtn').disabled = false;
-            document.getElementById('submitBtn').innerHTML = 'send message';
-            clearInput()
-            //handle success
-            Notiflix.Report.success(
-                'Success',
-                response.data.message,
-                'Okay',
-            );
-        })
-        .catch(function (error) {
-            document.getElementById('submitBtn').disabled = false;
-            document.getElementById('submitBtn').innerHTML = 'send message';
-            //handle error
-            const { response } = error;
-            if(response.status === 500) {
-                Notiflix.Report.failure(
-                    'An error occurred',
-                    response.data.message,
-                    'Okay',
-                );
-            }
-            if(response.data.errors !== null) {
-                setErrors(response.data.errors)
-            }
-            
-        });
+        if(firstName && lastName && email) {
+            console.log("Calling graphql function");
+            API.graphql({
+                query: createEmailMessage,
+                variables: {
+                  input: {
+                    firstName,
+                    email,
+                    message
+                  },
+                },
+              }).then( (response) => {
+                    console.log(response);
+                    document.getElementById('submitBtn').disabled = false;
+                    document.getElementById('submitBtn').innerHTML = 'send message';
+                    clearInput()
+                    //handle success
+                    Notiflix.Report.success(
+                        'Success',
+                        "Success",
+                        'Okay',
+                    );
+              }, (error) => {
+                    console.log(error);
+                    document.getElementById('submitBtn').disabled = false;
+                    document.getElementById('submitBtn').innerHTML = 'send message';
+                    //handle error
+                    Notiflix.Report.failure(
+                        'An error occurred',
+                        'An error occurred',
+                        'Okay',
+                    );
+                });
+        }
     }
     return (
         <>
