@@ -17,8 +17,8 @@ const Footer = () => {
                             <h3 className="font-bold text-4xl mb-4">ISA</h3>
                             <div className='text-md font-medium text-gray-600'>
                                 <h5>Industrial Software Automation</h5>
-                                <p>Cleveland </p>
-                                <p>OH, US</p>
+                                <p>PO Box 2468 </p>
+                                <p>44124 OH, US</p>
                             </div>
                         </div>
                     </div>

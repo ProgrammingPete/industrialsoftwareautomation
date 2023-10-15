@@ -37,7 +37,7 @@ const Portfolio = () => {
                                 <h4 className="font-semibold my-4 text-lg md:text-2xl text-center mb-4 h-12">Personal Websites</h4>
                                 <p className="text-md font-medium leading-5 h-auto md:h-48">
                                     We use the most up-to-date front end frameworks to create websites for our small clients that allows them to make a name for 
-                                    themselves in their industry. Some example industries are compose of Modeling, Power Washing, and 
+                                    themselves in their industry. Some example industries are composed of Modeling, Power Washing, and 
                                     other small IT/Industrial companies. One main feature of our personal website is SEO and a contact page that allows users to contact
                                      the respective sales manager. 
                                 </p>
