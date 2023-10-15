@@ -23,7 +23,7 @@ const Clients = () => {
                     </div>
 
                 <div className="p-16" data-aos="fade-in" data-aos-delay="600">
-                    <div className="grid sm:grid-cols-2 lg:grid-cols-2">
+                    <div className="grid sm:grid-cols-4 lg:grid-cols-4">
                         <div style={clientImage} className= "overflow-hidden flex justify-center transition-all ease-in-out opacity-50 hover:opacity-100 w-1/6">
                             <img src={amazon} alt="client" />                           
                         </div>
@@ -31,17 +31,12 @@ const Clients = () => {
                         <div style={clientImage} className="overflow-hidden p-3 flex justify-center transition-all ease-in-out opacity-50 hover:opacity-100">
                             <img src={sw} alt="client" />                            
                         </div> 
-                                           
-                    </div>
-                </div>
-                <div className="p-16" data-aos="fade-in" data-aos-delay="600">
-                    <div className="grid sm:grid-cols-2 lg:grid-cols-2">
                         <div style={clientImage} className="overflow-hidden p-3 flex justify-center transition-all ease-in-out opacity-50 hover:opacity-100">
                                     <img src={csu} alt="client" />                            
                         </div>
                         <div style={clientImage} className="overflow-hidden p-3 flex justify-center transition-all ease-in-out opacity-50 hover:opacity-100">
                                 <img src={sbs} alt="client" />                            
-                        </div>
+                        </div>                                           
                     </div>
                 </div>
             </section>

@@ -15,11 +15,11 @@ const Intro = () => {
                             
                             <h3 className="text-3xl  text-blue-900 font-bold">We develop high quality web and mobile applications for enterprise and small personal endeavors alike</h3>
                             <div>
-                                <p className='my-3 text-xl text-gray-600 font-semibold'>Our team of highly skilled SDEs are multi-diciplinary tackle a wide range of web development problems.</p>
+                                <p className='my-3 text-xl text-gray-600 font-semibold'>Our team of highly skilled SDEs are multi-disciplinary who tackle a wide range of web development problems.</p>
                             </div>
                             
                             <div>
-                                <p className='my-3 text-xl text-gray-600 font-semibold'>We take responsibility for building custom software solutions that caters for automation of your business processes and improve efficiency.</p>
+                                <p className='my-3 text-xl text-gray-600 font-semibold'>We take responsibility for building custom software solutions that cater to the automation of your business processes and improve efficiency.</p>
                             </div>
                             <Link to="/contact" className="text-white bg-blue-900 hover:bg-blue-800 inline-flex items-center justify-center w-full px-6 py-2 my-4 text-lg shadow-xl rounded-2xl sm:w-auto sm:mb-0 group">
                                 Contact us

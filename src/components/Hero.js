@@ -20,7 +20,7 @@ const Hero = () => {
                             </h1>
                             <div className="text-xl font-semibold tracking-tight mb-5 text-gray-500">
                                 We are a highly skilled and seasoned group of software engineers dedicated to delivering only the 
-                                highest quality software solutions. We build digital solutions to help your industrial business scale</div>
+                                highest quality software solutions. We build digital solutions to help your industrial business scale.</div>
                             <div className="mb-4 space-x-0 md:space-x-2 md:mb-8">
                                 <Link to="/contact" className="text-white bg-blue-900 hover:bg-blue-800 inline-flex items-center justify-center w-full px-6 py-3 my-4 text-lg shadow-xl rounded-2xl sm:w-auto sm:mb-0">
                                     Learn more

@@ -31,12 +31,6 @@ const Contact = () => {
         e.preventDefault();
         document.getElementById('submitBtn').disabled = true;
         document.getElementById('submitBtn').innerHTML = 'Loading...';
-        let fData = new FormData();
-        fData.append('first_name', firstName)
-        fData.append('last_name', lastName)
-        fData.append('email', email)
-        fData.append('phone_number', phone)
-        fData.append('message', message)
         const name = firstName + " " + lastName;
         if(firstName && lastName && email) {
             console.log("Calling graphql function");
@@ -71,6 +65,14 @@ const Contact = () => {
                         'Okay',
                     );
                 });
+        } else {
+            document.getElementById('submitBtn').disabled = false;
+            document.getElementById('submitBtn').innerHTML = 'send message';
+            Notiflix.Report.info(
+                'Information',
+                'Please Enter All requied Fields',
+                'Okay',
+            );
         }
     }
     return (
@@ -179,7 +181,7 @@ const Contact = () => {
                                     </div>
                                     <div className="flex flex-col">
                                         <h2 className="text-2xl">Office Address</h2>
-                                        <p className="text-gray-400">Cleveland OH, USA</p>
+                                        <p className="text-gray-400">PO Box 2468, Cleveland OH, 44124 USA</p>
                                     </div>
                                 </div>
                     
