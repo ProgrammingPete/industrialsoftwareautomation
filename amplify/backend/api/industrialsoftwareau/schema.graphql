@@ -9,4 +9,5 @@ type EmailMessage
   name: String!
   email: AWSEmail!
   message: String
+  phone: String
 }

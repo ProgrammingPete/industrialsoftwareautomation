@@ -40,7 +40,8 @@ const Contact = () => {
                   input: {
                     name,
                     email,
-                    message
+                    message,
+                    phone
                   },
                 },
               }).then( (response) => {

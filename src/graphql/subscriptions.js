@@ -10,6 +10,7 @@ export const onCreateEmailMessage = /* GraphQL */ `
       name
       email
       message
+      phone
       createdAt
       updatedAt
       __typename
@@ -25,6 +26,7 @@ export const onUpdateEmailMessage = /* GraphQL */ `
       name
       email
       message
+      phone
       createdAt
       updatedAt
       __typename
@@ -40,6 +42,7 @@ export const onDeleteEmailMessage = /* GraphQL */ `
       name
       email
       message
+      phone
       createdAt
       updatedAt
       __typename

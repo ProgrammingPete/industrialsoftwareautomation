@@ -8,6 +8,7 @@ export const getEmailMessage = /* GraphQL */ `
       name
       email
       message
+      phone
       createdAt
       updatedAt
       __typename
@@ -26,6 +27,7 @@ export const listEmailMessages = /* GraphQL */ `
         name
         email
         message
+        phone
         createdAt
         updatedAt
         __typename

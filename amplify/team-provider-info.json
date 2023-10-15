@@ -16,7 +16,7 @@
         "industrialsoftwarecontactuploader": {
           "sesEmail": "industrialsoftwareautomation@gmail.com",
           "deploymentBucketName": "amplify-industrialsoftwareau-dev-181116-deployment",
-          "s3Key": "amplify-builds/industrialsoftwarecontactuploader-5839775070765349564d-build.zip"
+          "s3Key": "amplify-builds/industrialsoftwarecontactuploader-4c5961514a5254706454-build.zip"
         }
       },
       "api": {

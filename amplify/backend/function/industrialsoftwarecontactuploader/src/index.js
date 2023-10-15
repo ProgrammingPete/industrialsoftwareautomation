@@ -15,10 +15,12 @@ exports.handler = async (event) => {
       const contactName = streamedItem.dynamodb.NewImage.name.S;
       const contactEmail = streamedItem.dynamodb.NewImage.email.S;
       const contactMessage = streamedItem.dynamodb.NewImage.message.S;
+      const phone = streamedItem.dynamodb.NewImage.phone.S;
       console.log(process.env.SES_EMAIL);
       console.log(contactName);
       console.log(contactEmail);
       console.log(contactMessage);
+      console.log(phone);
       const input = { // SendEmailRequest
         Source: process.env.SES_EMAIL, // required
         Destination: { // Destination
@@ -31,7 +33,7 @@ exports.handler = async (event) => {
             Data: 'Website Contact Request'
           },
           Body: { // Body
-            Text: { Data: `Email: ${contactEmail},\n Name: ${contactName},\n Message: ${contactMessage}` },
+            Text: { Data: `Email: ${contactEmail},\n Name: ${contactName},\n Message: ${contactMessage},\n Phone: ${phone}` },
           },
         }
       };
