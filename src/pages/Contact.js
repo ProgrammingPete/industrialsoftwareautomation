@@ -32,7 +32,7 @@ const Contact = () => {
         document.getElementById('submitBtn').disabled = true;
         document.getElementById('submitBtn').innerHTML = 'Loading...';
         const name = firstName + " " + lastName;
-        if(firstName && lastName && email) {
+        if(firstName && lastName && email && message && phone) {
             console.log("Calling graphql function");
             API.graphql({
                 query: createEmailMessage,
@@ -70,7 +70,7 @@ const Contact = () => {
             document.getElementById('submitBtn').innerHTML = 'send message';
             Notiflix.Report.info(
                 'Information',
-                'Please Enter All requied Fields',
+                'Please Enter All required Fields',
                 'Okay',
             );
         }
