@@ -37,14 +37,14 @@ const Contact = () => {
         fData.append('email', email)
         fData.append('phone_number', phone)
         fData.append('message', message)
-
+        const name = firstName + " " + lastName;
         if(firstName && lastName && email) {
             console.log("Calling graphql function");
             API.graphql({
                 query: createEmailMessage,
                 variables: {
                   input: {
-                    firstName,
+                    name,
                     email,
                     message
                   },

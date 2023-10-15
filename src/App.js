@@ -10,9 +10,11 @@ import {
 // All pages
 import Home from './pages/Home';
 import Contact from './pages/Contact';
-
+import { Amplify } from 'aws-amplify';
 import {useDocTitle} from './components/CustomHook';
-import ScrollToTop from './components/ScrollToTop';
+
+import awsconfig from './aws-exports';
+Amplify.configure(awsconfig);
 
 function App() {
   useEffect(() => {
