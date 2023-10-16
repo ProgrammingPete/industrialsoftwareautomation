@@ -18,7 +18,7 @@ const Footer = () => {
                             <div className='text-md font-medium text-gray-600'>
                                 <h5>Industrial Software Automation</h5>
                                 <p>PO Box 2468 </p>
-                                <p>44124 OH, US</p>
+                                <p>44124 Cleveland OH, US</p>
                             </div>
                         </div>
                     </div>
@@ -34,7 +34,7 @@ const Footer = () => {
                             <HashLink to="/#services" className="text-[#013289] hover:text-gray-900 hover:tracking-wider transition duration-250 ease-in-out">Services</HashLink>
                         </li>
                         <li className="mb-2">
-                            <HashLink to="/contact" className="text-[#013289] hover:text-gray-900 hover:tracking-wider transition duration-250 ease-in-out">Contact</HashLink>
+                            <HashLink to="/contact#top" className="text-[#013289] hover:text-gray-900 hover:tracking-wider transition duration-250 ease-in-out">Contact</HashLink>
                         </li>                            
                         </ul>
                     </div>
@@ -43,18 +43,18 @@ const Footer = () => {
                     <div className="col-span-6 md:col-span-6 lg:col-span-4 mx-auto">
                         <h6 className="text-[#013289] text-xl font-bold mb-4">OUR SERVICES</h6>
                         <ul className="text-md">
-                        <li className="mb-2">
-                            <Link to="#" className="text-[#013289] hover:text-gray-900 hover:tracking-wider transition duration-250 ease-in-out">Web Development</Link>
-                        </li>
-                        <li className="mb-2">
-                            <Link to="#" className="text-[#013289] hover:text-gray-900 hover:tracking-wider transition duration-250 ease-in-out">Mobile App Development</Link>
-                        </li>
-                        <li className="mb-2">
-                            <Link to="#" className="text-[#013289] hover:text-gray-900 hover:tracking-wider transition duration-250 ease-in-out">Domain and Hosting</Link>
-                        </li>
-                        <li className="mb-2">
-                            <Link to="#" className="text-[#013289] hover:text-gray-900 hover:tracking-wider transition duration-250 ease-in-out">General IT Consultations</Link>
-                        </li>
+                            <li className="mb-2">
+                                <HashLink to="/#portfolio" className="text-[#013289] hover:text-gray-900 hover:tracking-wider transition duration-250 ease-in-out">Web Development</HashLink>
+                            </li>
+                            <li className="mb-2">
+                                <HashLink to="/#portfolio" className="text-[#013289] hover:text-gray-900 hover:tracking-wider transition duration-250 ease-in-out">Mobile App Development</HashLink>
+                            </li>
+                            <li className="mb-2">
+                                <HashLink to="/#portfolio" className="text-[#013289] hover:text-gray-900 hover:tracking-wider transition duration-250 ease-in-out">Domain and Hosting</HashLink>
+                            </li>
+                            <li className="mb-2">
+                                <HashLink to="/#portfolio" className="text-[#013289] hover:text-gray-900 hover:tracking-wider transition duration-250 ease-in-out">General IT Consultations</HashLink>
+                            </li>
                         </ul>
                     </div>
 

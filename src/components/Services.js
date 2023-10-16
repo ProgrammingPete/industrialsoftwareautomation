@@ -105,7 +105,7 @@ const Services = () => {
                             <div>
                                 <p className='my-3 text-xl text-gray-600 font-semibold'>We offer constant monitoring of our application at no extra cost. 
                                 We also provide a very straight forward way of updating data within your system. This includes the most up-to-date security
-                                 processses to keep your data safe. </p>
+                                 processes to keep your data safe. </p>
                             </div>
                         </div>
                     </div>

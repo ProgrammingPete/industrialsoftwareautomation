@@ -13,6 +13,7 @@ import Contact from './pages/Contact';
 import { Amplify } from 'aws-amplify';
 import {useDocTitle} from './components/CustomHook';
 
+// TODO: need to change this to be more secure 
 import awsconfig from './aws-exports';
 Amplify.configure(awsconfig);
 
